@@ -12,8 +12,8 @@ namespace DailyHelper.Client.Models
 {
     public class NoteRepository : IRepository<Note>
     {
-        private ApiOption _option;
-        private RestClient _client;
+        private readonly ApiOption _option;
+        private readonly RestClient _client;
 
         public NoteRepository(ApiOption option)
         {

@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyHelper.Client", "Daily
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyHelperApi.Tests", "DailyHelperApi.Tests\DailyHelperApi.Tests.csproj", "{248AB511-A575-4433-80F0-A8FA1FB729A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyHelper.IntegrationTests", "DailyHelper.IntegrationTests\DailyHelper.IntegrationTests.csproj", "{B4DC5FF9-F5FA-4171-997E-05EC18F271F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{248AB511-A575-4433-80F0-A8FA1FB729A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{248AB511-A575-4433-80F0-A8FA1FB729A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{248AB511-A575-4433-80F0-A8FA1FB729A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4DC5FF9-F5FA-4171-997E-05EC18F271F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4DC5FF9-F5FA-4171-997E-05EC18F271F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4DC5FF9-F5FA-4171-997E-05EC18F271F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4DC5FF9-F5FA-4171-997E-05EC18F271F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DailyHelper.Client.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -31,8 +32,10 @@ namespace DailyHelper.Client
             
             services.AddMvc(action => action.EnableEndpointRouting = false);
             services.AddSession();
-            services.AddHttpClient();
-
+            services.AddHttpContextAccessor();
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie();
+            
             services.AddTransient<IRepository<Note>, NoteRepository>();
         }
 

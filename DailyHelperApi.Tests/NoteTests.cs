@@ -17,7 +17,7 @@ namespace DailyHelperApi.Tests
         {
             //arrange
             var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseInMemoryDatabase("DailyDb")
+                .UseInMemoryDatabase("TestDb")
                 .Options;
 
             using (var context= new ApplicationDbContext(options))
@@ -57,7 +57,7 @@ namespace DailyHelperApi.Tests
         {
             //arrange
             var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseInMemoryDatabase("DailyDb")
+                .UseInMemoryDatabase("TestDb")
                 .Options;
 
             Guid id= Guid.NewGuid();
@@ -85,7 +85,7 @@ namespace DailyHelperApi.Tests
         {
             //arrange
             var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseInMemoryDatabase("DailyDb")
+                .UseInMemoryDatabase("TestDb")
                 .Options;
 
             Guid id= Guid.NewGuid();
@@ -110,7 +110,7 @@ namespace DailyHelperApi.Tests
         {
             //arrange
             var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseInMemoryDatabase("DailyDb")
+                .UseInMemoryDatabase("TestDb")
                 .Options;
             var noteToTest = new Note()
             {
@@ -139,7 +139,7 @@ namespace DailyHelperApi.Tests
         {
             //arrange
             var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseInMemoryDatabase("DailyDb")
+                .UseInMemoryDatabase("TestDb")
                 .Options;
             var id = Guid.NewGuid();
             var noteToTest = new Note()
